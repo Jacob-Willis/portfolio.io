@@ -36,7 +36,39 @@
 }
 /* about section image css */
 .imageAboutPage {
-    width: 100%;
+    width: 300px;
+    border-radius: 300px;
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.imageContainer {
+    width: 300px !important;
+    height: 300px;
+    border-radius: 300px !important;
+    position: relative;
+}
+
+.imageContainer:hover .imageAboutPage {
+    opacity: 0.5;
+}
+
+.imageContainer:hover .imageText {
+    opacity: 1;
+}
+
+.imageText {
+    transition: .5s ease;
+    opacity: 0;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -16px 0px 0 -60px
 }
 
 /* services section css */
@@ -70,6 +102,19 @@
 .fab {
     color: #000000;
 }
+
+.tablerow {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.tableitem {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+}
+
 /* footer styling */
 #footer {
     background-color: #808080;
